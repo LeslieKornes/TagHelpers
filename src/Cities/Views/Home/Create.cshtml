@@ -19,6 +19,12 @@
         <input class="form-control" name="Population" />
     </div>
     
-    <button type="submit" class="btn btn-primary">Add</button>
+
+    @* THIS IS THE OLD BUTTON *@
+    @*<button type="submit" class="btn btn-primary">Add</button>*@
+    
+    @* HERE IS THE NEW BUTTON WITH THE TAG HELPER *@
+    <button type="submit" bs-button-color="danger">Add</button>
+    <button type="reset" class="btn btn-primary">Reset</button>  @* you see when running this code, that the btn is NOT primary, and when inspected is simply "btn btn-"*@  
     <a class="btn btn-primary" href="/Home/Index">Cancel</a>
 </form>

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace Cities.Infrastructure.TagHelpers
 {
+    //applying restrictions with this tag helper attribute so as to narrow the scope of the tag helper
+    [HtmlTargetElement("button", Attributes = "bs-button-color", ParentTag = "form")]
     public class ButtonTagHelper : TagHelper
     {
         public string BsButtonColor { get; set; }
